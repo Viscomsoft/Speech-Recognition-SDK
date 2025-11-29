@@ -1,15 +1,15 @@
 VERSION 5.00
-Object = "{362DD430-5322-4C89-870A-FC7E4475524B}#1.0#0"; "speechrecognition.ocx"
+Object = "{362DD430-5322-4C89-870A-FC7E4475524B}#1.0#0"; "SpeechRecognition.ocx"
 Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "comdlg32.ocx"
 Begin VB.Form Form1 
    Caption         =   "Speech Recognition Demo"
-   ClientHeight    =   5400
+   ClientHeight    =   5970
    ClientLeft      =   60
    ClientTop       =   450
-   ClientWidth     =   7830
+   ClientWidth     =   8250
    LinkTopic       =   "Form1"
-   ScaleHeight     =   5400
-   ScaleWidth      =   7830
+   ScaleHeight     =   5970
+   ScaleWidth      =   8250
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command5 
       Caption         =   "Play from wave file"
@@ -63,7 +63,15 @@ Begin VB.Form Form1
       Left            =   3720
       TabIndex        =   5
       Top             =   600
-      Width           =   3615
+      Width           =   4455
+      Begin VB.CommandButton cmdstop 
+         Caption         =   "Stop"
+         Height          =   375
+         Left            =   3600
+         TabIndex        =   21
+         Top             =   240
+         Width           =   735
+      End
       Begin VB.CommandButton Command4 
          Caption         =   "Change"
          Height          =   255
@@ -216,6 +224,11 @@ End If
    SpeechRecognition1.Speak txtText.Text
 End Sub
 
+Private Sub cmdstop_Click()
+SpeechRecognition1.Stop
+
+End Sub
+
 Private Sub Command1_Click()
 
  Dim iFile As Long
@@ -357,4 +370,8 @@ Me.SpeechRecognition1.InitControl
 
 
 
+End Sub
+
+Private Sub SpeechRecognition1_SpeakComplete()
+MsgBox "Speak Completed"
 End Sub
