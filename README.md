@@ -23,8 +23,10 @@ Install Viscomsoft PDF Viewer SDK from https://www.viscomsoft.com/products/speec
 
 7. Playback wave file
 
-8. Include c# 2010, c# 2019 , VB.NET 2019, VB.NET 2010, Delphi , Visual Basic 6 ,Visual Foxpro Sample Code. Compatible with any programming language that supports ActiveX (Access, Visual C , Visual Basic , Visual Foxpro, Delphi, .Net, etc.
+8. Support Speak Completed or Playback Wave file Completed event.
 
-9. Royalty free distribution of the OCX file.
+9. Include c# 2010, c# 2019 , VB.NET 2019, VB.NET 2010, Delphi , Visual Basic 6 ,Visual Foxpro Sample Code. Compatible with any programming language that supports ActiveX (Access, Visual C , Visual Basic , Visual Foxpro, Delphi, .Net, etc.
+
+10. Royalty free distribution of the OCX file.
 
 
