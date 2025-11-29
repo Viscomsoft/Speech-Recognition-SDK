@@ -132,6 +132,27 @@ namespace WindowsFormsApplication1
             axSpeechRecognition1.Volume = Int32.Parse(txtvolume.Text);
         }
 
+        private void axSpeechRecognition1_SpeakComplete(object sender, EventArgs e)
+        {
+            MessageBox.Show("Speak Completed");
+        }
+
+        private void axSpeechRecognition1_VoiceSentenceStatus(object sender, AxSpeechRecognitionLib._DSpeechRecognitionEvents_VoiceSentenceStatusEvent e)
+        {
+
+           
+        }
+
+        private void axSpeechRecognition1_VoiceWordsStatus(object sender, AxSpeechRecognitionLib._DSpeechRecognitionEvents_VoiceWordsStatusEvent e)
+        {
+           
+        }
+
+        private void btnstop_Click(object sender, EventArgs e)
+        {
+            axSpeechRecognition1.Stop();
+        }
+
       
        
     }
