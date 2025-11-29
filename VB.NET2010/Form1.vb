@@ -118,4 +118,12 @@
         End If
 
     End Sub
+
+    Private Sub AxSpeechRecognition1_SpeakComplete(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AxSpeechRecognition1.SpeakComplete
+        MessageBox.Show("Speak Completed")
+    End Sub
+
+    Private Sub BtnStop_Click(sender As System.Object, e As System.EventArgs) Handles BtnStop.Click
+        AxSpeechRecognition1.Stop()
+    End Sub
 End Class

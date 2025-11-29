@@ -44,6 +44,7 @@ Partial Class Form1
         Me.txtvolume = New System.Windows.Forms.TextBox()
         Me.btnvolume = New System.Windows.Forms.Button()
         Me.groupBox1 = New System.Windows.Forms.GroupBox()
+        Me.BtnStop = New System.Windows.Forms.Button()
         Me.txtplaybackrate = New System.Windows.Forms.TextBox()
         Me.btnchangeplaybackrate = New System.Windows.Forms.Button()
         CType(Me.AxSpeechRecognition1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,44 +54,49 @@ Partial Class Form1
         'AxSpeechRecognition1
         '
         Me.AxSpeechRecognition1.Enabled = True
-        Me.AxSpeechRecognition1.Location = New System.Drawing.Point(802, 204)
+        Me.AxSpeechRecognition1.Location = New System.Drawing.Point(731, 197)
+        Me.AxSpeechRecognition1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.AxSpeechRecognition1.Name = "AxSpeechRecognition1"
         Me.AxSpeechRecognition1.OcxState = CType(resources.GetObject("AxSpeechRecognition1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxSpeechRecognition1.Size = New System.Drawing.Size(183, 171)
+        Me.AxSpeechRecognition1.Size = New System.Drawing.Size(366, 342)
         Me.AxSpeechRecognition1.TabIndex = 0
         '
         'btnplaywav
         '
-        Me.btnplaywav.Location = New System.Drawing.Point(497, 351)
+        Me.btnplaywav.Location = New System.Drawing.Point(373, 304)
+        Me.btnplaywav.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnplaywav.Name = "btnplaywav"
-        Me.btnplaywav.Size = New System.Drawing.Size(175, 41)
+        Me.btnplaywav.Size = New System.Drawing.Size(131, 36)
         Me.btnplaywav.TabIndex = 32
         Me.btnplaywav.Text = "Play From Wave File"
         Me.btnplaywav.UseVisualStyleBackColor = True
         '
         'btnspeakfromtexttowave
         '
-        Me.btnspeakfromtexttowave.Location = New System.Drawing.Point(497, 284)
+        Me.btnspeakfromtexttowave.Location = New System.Drawing.Point(373, 246)
+        Me.btnspeakfromtexttowave.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnspeakfromtexttowave.Name = "btnspeakfromtexttowave"
-        Me.btnspeakfromtexttowave.Size = New System.Drawing.Size(175, 41)
+        Me.btnspeakfromtexttowave.Size = New System.Drawing.Size(131, 36)
         Me.btnspeakfromtexttowave.TabIndex = 31
         Me.btnspeakfromtexttowave.Text = "Speak to Wave From Text File"
         Me.btnspeakfromtexttowave.UseVisualStyleBackColor = True
         '
         'btnspeakfromtext
         '
-        Me.btnspeakfromtext.Location = New System.Drawing.Point(497, 227)
+        Me.btnspeakfromtext.Location = New System.Drawing.Point(373, 197)
+        Me.btnspeakfromtext.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnspeakfromtext.Name = "btnspeakfromtext"
-        Me.btnspeakfromtext.Size = New System.Drawing.Size(175, 41)
+        Me.btnspeakfromtext.Size = New System.Drawing.Size(131, 36)
         Me.btnspeakfromtext.TabIndex = 30
         Me.btnspeakfromtext.Text = "Speak From Text File"
         Me.btnspeakfromtext.UseVisualStyleBackColor = True
         '
         'btnSavetoWAV
         '
-        Me.btnSavetoWAV.Location = New System.Drawing.Point(497, 167)
+        Me.btnSavetoWAV.Location = New System.Drawing.Point(373, 145)
+        Me.btnSavetoWAV.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnSavetoWAV.Name = "btnSavetoWAV"
-        Me.btnSavetoWAV.Size = New System.Drawing.Size(175, 41)
+        Me.btnSavetoWAV.Size = New System.Drawing.Size(131, 36)
         Me.btnSavetoWAV.TabIndex = 29
         Me.btnSavetoWAV.Text = "Speak to Wave"
         Me.btnSavetoWAV.UseVisualStyleBackColor = True
@@ -99,43 +105,48 @@ Partial Class Form1
         '
         Me.cbowaveformat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbowaveformat.FormattingEnabled = True
-        Me.cbowaveformat.Location = New System.Drawing.Point(31, 424)
+        Me.cbowaveformat.Location = New System.Drawing.Point(23, 367)
+        Me.cbowaveformat.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.cbowaveformat.Name = "cbowaveformat"
-        Me.cbowaveformat.Size = New System.Drawing.Size(423, 23)
+        Me.cbowaveformat.Size = New System.Drawing.Size(318, 21)
         Me.cbowaveformat.TabIndex = 28
         '
         'label3
         '
         Me.label3.AutoSize = True
-        Me.label3.Location = New System.Drawing.Point(28, 396)
+        Me.label3.Location = New System.Drawing.Point(21, 343)
+        Me.label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.label3.Name = "label3"
-        Me.label3.Size = New System.Drawing.Size(151, 15)
+        Me.label3.Size = New System.Drawing.Size(106, 13)
         Me.label3.TabIndex = 27
         Me.label3.Text = "Output Wave Format"
         '
         'label2
         '
         Me.label2.AutoSize = True
-        Me.label2.Location = New System.Drawing.Point(28, 78)
+        Me.label2.Location = New System.Drawing.Point(21, 68)
+        Me.label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.label2.Name = "label2"
-        Me.label2.Size = New System.Drawing.Size(119, 15)
+        Me.label2.Size = New System.Drawing.Size(69, 13)
         Me.label2.TabIndex = 26
         Me.label2.Text = "enter the text"
         '
         'richTextBox1
         '
-        Me.richTextBox1.Location = New System.Drawing.Point(20, 106)
+        Me.richTextBox1.Location = New System.Drawing.Point(15, 92)
+        Me.richTextBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.richTextBox1.Name = "richTextBox1"
-        Me.richTextBox1.Size = New System.Drawing.Size(462, 239)
+        Me.richTextBox1.Size = New System.Drawing.Size(348, 208)
         Me.richTextBox1.TabIndex = 25
         Me.richTextBox1.Text = ""
         '
         'label1
         '
         Me.label1.AutoSize = True
-        Me.label1.Location = New System.Drawing.Point(17, 23)
+        Me.label1.Location = New System.Drawing.Point(13, 20)
+        Me.label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(47, 15)
+        Me.label1.Size = New System.Drawing.Size(34, 13)
         Me.label1.TabIndex = 24
         Me.label1.Text = "Voice"
         '
@@ -143,9 +154,10 @@ Partial Class Form1
         '
         Me.cboVoice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboVoice.FormattingEnabled = True
-        Me.cboVoice.Location = New System.Drawing.Point(101, 23)
+        Me.cboVoice.Location = New System.Drawing.Point(76, 20)
+        Me.cboVoice.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.cboVoice.Name = "cboVoice"
-        Me.cboVoice.Size = New System.Drawing.Size(381, 23)
+        Me.cboVoice.Size = New System.Drawing.Size(287, 21)
         Me.cboVoice.TabIndex = 23
         '
         'OpenFileDialog1
@@ -155,35 +167,39 @@ Partial Class Form1
         'label5
         '
         Me.label5.AutoSize = True
-        Me.label5.Location = New System.Drawing.Point(8, 118)
+        Me.label5.Location = New System.Drawing.Point(6, 102)
+        Me.label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.label5.Name = "label5"
-        Me.label5.Size = New System.Drawing.Size(167, 15)
+        Me.label5.Size = New System.Drawing.Size(104, 13)
         Me.label5.TabIndex = 19
         Me.label5.Text = "Volume (from 0 -100)"
         '
         'btnspeak
         '
-        Me.btnspeak.Location = New System.Drawing.Point(8, 23)
+        Me.btnspeak.Location = New System.Drawing.Point(6, 20)
+        Me.btnspeak.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnspeak.Name = "btnspeak"
-        Me.btnspeak.Size = New System.Drawing.Size(167, 41)
+        Me.btnspeak.Size = New System.Drawing.Size(125, 36)
         Me.btnspeak.TabIndex = 14
         Me.btnspeak.Text = "Speak"
         Me.btnspeak.UseVisualStyleBackColor = True
         '
         'btnpause
         '
-        Me.btnpause.Location = New System.Drawing.Point(226, 24)
+        Me.btnpause.Location = New System.Drawing.Point(170, 21)
+        Me.btnpause.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnpause.Name = "btnpause"
-        Me.btnpause.Size = New System.Drawing.Size(85, 40)
+        Me.btnpause.Size = New System.Drawing.Size(64, 35)
         Me.btnpause.TabIndex = 15
         Me.btnpause.Text = "Pause"
         Me.btnpause.UseVisualStyleBackColor = True
         '
         'btnresume
         '
-        Me.btnresume.Location = New System.Drawing.Point(345, 24)
+        Me.btnresume.Location = New System.Drawing.Point(254, 21)
+        Me.btnresume.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnresume.Name = "btnresume"
-        Me.btnresume.Size = New System.Drawing.Size(77, 40)
+        Me.btnresume.Size = New System.Drawing.Size(64, 35)
         Me.btnresume.TabIndex = 16
         Me.btnresume.Text = "Resume"
         Me.btnresume.UseVisualStyleBackColor = True
@@ -191,31 +207,35 @@ Partial Class Form1
         'label4
         '
         Me.label4.AutoSize = True
-        Me.label4.Location = New System.Drawing.Point(4, 86)
+        Me.label4.Location = New System.Drawing.Point(3, 75)
+        Me.label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.label4.Name = "label4"
-        Me.label4.Size = New System.Drawing.Size(335, 15)
+        Me.label4.Size = New System.Drawing.Size(193, 13)
         Me.label4.TabIndex = 19
         Me.label4.Text = "Playback rate (from -10 to 10, default 0)"
         '
         'txtvolume
         '
-        Me.txtvolume.Location = New System.Drawing.Point(345, 115)
+        Me.txtvolume.Location = New System.Drawing.Point(259, 100)
+        Me.txtvolume.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.txtvolume.Name = "txtvolume"
-        Me.txtvolume.Size = New System.Drawing.Size(66, 25)
+        Me.txtvolume.Size = New System.Drawing.Size(50, 20)
         Me.txtvolume.TabIndex = 22
         Me.txtvolume.Text = "100"
         '
         'btnvolume
         '
-        Me.btnvolume.Location = New System.Drawing.Point(451, 118)
+        Me.btnvolume.Location = New System.Drawing.Point(338, 102)
+        Me.btnvolume.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnvolume.Name = "btnvolume"
-        Me.btnvolume.Size = New System.Drawing.Size(78, 22)
+        Me.btnvolume.Size = New System.Drawing.Size(58, 19)
         Me.btnvolume.TabIndex = 23
         Me.btnvolume.Text = "Change"
         Me.btnvolume.UseVisualStyleBackColor = True
         '
         'groupBox1
         '
+        Me.groupBox1.Controls.Add(Me.BtnStop)
         Me.groupBox1.Controls.Add(Me.txtplaybackrate)
         Me.groupBox1.Controls.Add(Me.btnchangeplaybackrate)
         Me.groupBox1.Controls.Add(Me.btnvolume)
@@ -225,34 +245,48 @@ Partial Class Form1
         Me.groupBox1.Controls.Add(Me.btnpause)
         Me.groupBox1.Controls.Add(Me.btnspeak)
         Me.groupBox1.Controls.Add(Me.label5)
-        Me.groupBox1.Location = New System.Drawing.Point(497, 2)
+        Me.groupBox1.Location = New System.Drawing.Point(373, 2)
+        Me.groupBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.groupBox1.Name = "groupBox1"
-        Me.groupBox1.Size = New System.Drawing.Size(582, 159)
+        Me.groupBox1.Padding = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.groupBox1.Size = New System.Drawing.Size(436, 138)
         Me.groupBox1.TabIndex = 35
         Me.groupBox1.TabStop = False
         '
+        'BtnStop
+        '
+        Me.BtnStop.Location = New System.Drawing.Point(332, 22)
+        Me.BtnStop.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.BtnStop.Name = "BtnStop"
+        Me.BtnStop.Size = New System.Drawing.Size(64, 35)
+        Me.BtnStop.TabIndex = 37
+        Me.BtnStop.Text = "Stop"
+        Me.BtnStop.UseVisualStyleBackColor = True
+        '
         'txtplaybackrate
         '
-        Me.txtplaybackrate.Location = New System.Drawing.Point(345, 78)
+        Me.txtplaybackrate.Location = New System.Drawing.Point(259, 68)
+        Me.txtplaybackrate.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.txtplaybackrate.Name = "txtplaybackrate"
-        Me.txtplaybackrate.Size = New System.Drawing.Size(66, 25)
+        Me.txtplaybackrate.Size = New System.Drawing.Size(50, 20)
         Me.txtplaybackrate.TabIndex = 35
         Me.txtplaybackrate.Text = "0"
         '
         'btnchangeplaybackrate
         '
-        Me.btnchangeplaybackrate.Location = New System.Drawing.Point(451, 77)
+        Me.btnchangeplaybackrate.Location = New System.Drawing.Point(338, 67)
+        Me.btnchangeplaybackrate.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnchangeplaybackrate.Name = "btnchangeplaybackrate"
-        Me.btnchangeplaybackrate.Size = New System.Drawing.Size(78, 22)
+        Me.btnchangeplaybackrate.Size = New System.Drawing.Size(58, 19)
         Me.btnchangeplaybackrate.TabIndex = 36
         Me.btnchangeplaybackrate.Text = "Change"
         Me.btnchangeplaybackrate.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1423, 495)
+        Me.ClientSize = New System.Drawing.Size(863, 412)
         Me.Controls.Add(Me.groupBox1)
         Me.Controls.Add(Me.btnplaywav)
         Me.Controls.Add(Me.btnspeakfromtexttowave)
@@ -265,6 +299,7 @@ Partial Class Form1
         Me.Controls.Add(Me.label1)
         Me.Controls.Add(Me.cboVoice)
         Me.Controls.Add(Me.AxSpeechRecognition1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.AxSpeechRecognition1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -297,5 +332,6 @@ Partial Class Form1
     Private WithEvents groupBox1 As System.Windows.Forms.GroupBox
     Private WithEvents txtplaybackrate As System.Windows.Forms.TextBox
     Private WithEvents btnchangeplaybackrate As System.Windows.Forms.Button
+    Private WithEvents BtnStop As System.Windows.Forms.Button
 
 End Class
